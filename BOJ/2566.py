@@ -32,3 +32,18 @@ for i in range(n):
 
 print(max_value)
 print(max_position[0] + 1, max_position[1] + 1)
+
+""" 2번 솔루션
+arr = []
+
+max_value = -1
+for i in range(9):
+    arr.append(list(map(int, input().split())))
+    for j, x in enumerate(arr[i]):
+        if max_value < x:
+            max_value = x
+            max_index = (i + 1, j + 1)
+
+print(max_value)
+print(max_index[0], max_index[1])
+"""
