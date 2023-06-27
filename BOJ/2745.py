@@ -69,3 +69,16 @@ for i in range(len(n)):  # 각 자리마다 확인하며
     y = b**i  # 현재 곱해질 수(제곱 수)
     answer += (x * y)
 print(answer)
+
+"""
+import sys
+from collections import deque
+
+input = sys.stdin.readline
+sys.setrecursionlimit(int(1e6))
+
+a, b = input().rstrip().split()
+
+result = int(a, base=int(b))
+print(result)
+"""
